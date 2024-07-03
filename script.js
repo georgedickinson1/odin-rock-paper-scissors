@@ -52,23 +52,31 @@ function playRound(userChoice, computerChoice) {
     }
 }
 
-function playGame() {
-    let gameCount = 0;
-    while (gameCount < 5) {
-        console.log("\n")
-        var computerChoice = getComputerChoice();
-        var userChoice = getUserChoice();
+const gameContainer = document.querySelector(".game-container");
+gameContainer.addEventListener("click", (event) => {
+    if (event.target.className === "rock" || event.target.className === "paper" || event.target.className === "scissors") {
+        let userChoice = event.target.className;
+        let computerChoice = getComputerChoice();
         playRound(userChoice, computerChoice);
-        console.log("User Score: " + userScore)
-        console.log("Computer Score: " + computerScore)
-        gameCount = ++gameCount;
-    }
-    console.log("\n")
-    if (userScore > computerScore) {
-        console.log("Congratulations! You win the game.")
-    } else {
-        console.log("Unlucky. You lose the game.")
-    }
-}
+    };
+});
 
-playGame();
+// function playGame() {
+//     let gameCount = 0;
+//     var computerChoice = getComputerChoice();
+//     var userChoice = getUserChoice();
+//     playRound(userChoice, computerChoice);
+//     console.log("User Score: " + userScore)
+//     console.log("Computer Score: " + computerScore)
+//     gameCount = ++gameCount;
+
+
+//     console.log("\n")
+//     if (userScore > computerScore) {
+//         console.log("Congratulations! You win the game.")
+//     } else {
+//         console.log("Unlucky. You lose the game.")
+//     }
+// }
+
+// playGame();
