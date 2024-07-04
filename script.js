@@ -64,17 +64,18 @@ gameContainer.addEventListener("click", (event) => {
 
 let gameCount = 0;
 
-const gameResultsUser = document.querySelector(".game-results.user");
-const gameResultsComputer = document.querySelector(".game-results.computer");
+const gameResultsUser = document.querySelector(".game-results.user.score");
+const gameResultsComputer = document.querySelector(".game-results.computer.score");
 const gameResultsOutcome = document.querySelector(".game-results.outcome");
+
 
 function trackScore() {
     if (gameCount === 0) {
         gameResultsOutcome.textContent = "";
     }
-    gameResultsUser.textContent = "User Score: " + userScore;
-    gameResultsComputer.textContent = "Computer Score: " + computerScore;
     gameCount++;
+    gameResultsUser.textContent = userScore;
+    gameResultsComputer.textContent = computerScore;
 
     if (userScore === 3 || computerScore === 3) {
         if (userScore > computerScore) {
@@ -90,3 +91,4 @@ function trackScore() {
         };
     };
 };
+

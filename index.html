@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="game-container">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
-    </div>
-    <div class="results-container">
-        <h3 class="round-results"></h3>
-        <h5 class="game-results user"></h5>
-        <h5 class="game-results computer"></h5>
-        <h2 class="game-results outcome"></h2>
-    </div>
+        <div class="whole-game-container background">
+        <div class="whole-game-container foreground">
+            <div class="buttons-round">
+                <div class="game-container">
+                    <button class="rock">Rock</button>
+                    <button class="paper">Paper</button>
+                    <button class="scissors">Scissors</button>
+                </div>
+                <div class="results-container">
+                    <h3 class="round-results">...</h3>
+                    <div class="scores">
+                        <div class="user-container">
+                            <h4 class="game-results user">Your Score: </h4>
+                            <h4 class="game-results user score"></h4>
+                        </div>
+                        <div class="computer-container">
+                            <h4 class="game-results computer">Computer Score: </h4>
+                            <h4 class="game-results computer score"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="game-results outcome"></h2>
+        </div>
+        </div>
 </body>
 </html>

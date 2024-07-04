@@ -1,0 +1,105 @@
+body {
+    color: white;
+    background-image: url(background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vw;
+    font-family: Clarkson,Helvetica,sans-serif;
+}
+
+.whole-game-container .foreground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 37vw;
+    margin: 60px;
+    margin-top: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(243, 243, 243, 0.261);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+}
+
+button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+
+button:hover {
+    background: rgba(243, 243, 243, 0.449);
+}
+
+.game-container {
+    padding-bottom: 100px;
+}
+
+.results-container {
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.round-results {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.game-results.outcome {
+    text-align: center;
+    margin-top: 350px;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-container {
+    display: flex;
+}
+
+.computer-container {
+    display: flex;
+}
+
+.game-results.computer.score {
+    margin-left: 10px;
+}
+
+.game-results.user.score {
+    margin-left: 10px;
+}
+
+.buttons-round {
+    position: absolute;
+}
